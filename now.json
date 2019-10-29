@@ -1,10 +1,18 @@
 {
 	"version": 2,
 	"builds": [
-		{ "src": "index.py", "use": "@now/python" },
-		{ "src": "firestore/*", "use": "@now/static" }
+		{
+			"src": "./index.py",
+			"use": "@now/python",
+			"config": {
+				"maxLambdaSize": "80mb"
+			}
+		}
 	],
 	"routes": [
-		{ "src": "/(.*)", "dest": "index.py" }
+		{
+			"src": "/(.*)",
+			"dest": "index.py"
+		}
 	]
 }

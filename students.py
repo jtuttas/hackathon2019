@@ -10,7 +10,7 @@ class Students():
 
     def connectFirestore(self):
         cred = credentials.Certificate(
-            "./firestore/ServiceAccountKey.json")
+            "./ServiceAccountKey.json")
         app = firebase_admin.initialize_app(cred)
 
         store = firestore.client()

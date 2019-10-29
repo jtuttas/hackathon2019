@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler
 import debugserver
 import json
 import urllib.parse 
-import firestore.students
+import students
 
 class handler(BaseHTTPRequestHandler):
 
@@ -13,7 +13,7 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
 
        
-        print(firestore.students.test.getClass(1))
+        print(students.test.getClass("IT8o"))
         query=urllib.parse.parse_qs(self.path)
         print ("Betreff="+str(query.get('/?Betreff')));
         response = {"Betreff": str(query.get('/?Betreff')),
