@@ -20,7 +20,7 @@ class handler(BaseHTTPRequestHandler):
         aktionstyp=str(query.get('Aktionstyp')).replace("[","").replace("]","").replace("'","")
         print ("Betreff="+betreff+ " Aktionstyp="+aktionstyp)
 
-        if aktionstyp=="deleted":
+        if aktionstyp=="updated":
             print(students.test.getClass(betreff))
             pupils =students.test.getClass(betreff)
             for pupil in pupils:
