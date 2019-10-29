@@ -4,15 +4,15 @@ from firebase_admin import credentials, firestore
 import json
 
 # Credentials
-cred = credentials.Certificate("./ServiceAccountKey.json")
+cred = credentials.Certificate("./firestore/ServiceAccountKey.json")
 app = firebase_admin.initialize_app(cred)
 
 store = firestore.client()
 
-jsonPath = "./students.json"
+jsonPath = open("./firestore/students.json", "r")
 collection = "students"
 
-data = json.load(open(jsonPath, "r").read())
+data = json.load(jsonPath)
 
 for student in data:
     documentName = student["id"]
