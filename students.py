@@ -21,11 +21,14 @@ class Students():
     def getClass(self, classID):
         documents = self.data.where('class', '==', classID).stream()
         studentsDict = {el.id: el.to_dict() for el in documents}
-        studentsArray = [student for student in studentsDict.items()]
+        studentsArray = []
+        for studentKey, studentValue in studentsDict.items():
+            studentsArray.append(studentValue)
 
         return studentsArray
 
 test = Students()
+
 
 #print("Klasse 1")
 #print(test.getClass("IT8o"))

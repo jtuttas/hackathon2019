@@ -1,4 +1,41 @@
-GET http://localhost:80?Betreff=fiae17A&Startzeit=2017-08-29T12:34:35.0000000&Endzeit=Startzeit2017-08-29T14:00:00.0000000 HTTP/1.1
+GET http://localhost:80?Betreff=IT8o&Aktionstyp=deleted&Startzeit=2017-08-29T12:34:35.0000000&Endzeit=Startzeit2017-08-29T14:00:00.0000000 HTTP/1.1
 
 ###
 GET http://service.joerg-tuttas.de?Betreff=fiae17A&Startzeit=2017-08-29T12:34:35.0000000&Endzeit=Startzeit2017-08-29T14:00:00.0000000 HTTP/1.1
+
+### Messag Vati
+POST https://prod-114.westeurope.logic.azure.com:443/workflows/a762c39d15ba4995aa5b01067b384f53/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Wk0rvfbm8gr6Zoy3dkapZSPtMd2VoJqCaXQr_0CjMJw HTTP/1.1
+Content-Type: application/json
+
+{  
+        "msg": "Hallo Fati!"
+}
+### Messag Simon
+POST https://prod-55.westeurope.logic.azure.com:443/workflows/ce9c74a0b99642f1b341e3564464b404/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=j7MDJ9qQjNKNJf-43f0pJjinDAFBeSbuwcgOjC91vUc HTTP/1.1
+Content-Type: application/json
+
+{  
+        "msg": "Hallo Simon"
+}
+### Messag Jörg
+POST https://prod-59.westeurope.logic.azure.com:443/workflows/30d055b7d4b54e3d932c08c2156fefdc/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2fjmZHuDOuFN9PA3yry_nLLnmyjUBQaaWpD2qg_fOOk HTTP/1.1
+Content-Type: application/json
+
+{  
+        "msg": "Hallo Jörg"
+}
+### Messag Florian
+POST https://prod-39.westeurope.logic.azure.com:443/workflows/9731d87306f046ef8d3973dcb75aa217/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=FwZxryct0DGE8WF3fAlI8PLwBLACgpOrKtDg4gPXBT0 HTTP/1.1
+Content-Type: application/json
+
+{  
+        "msg": "Hallo Florian"
+}
+### Messag vincent
+
+POST https://prod-76.westeurope.logic.azure.com:443/workflows/411a2e0220fc4a96b82f0c4bf58803ec/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=M_SatVMak0ElioqTbn57aor9BK54ta-jq6-P5_0FF2w HTTP/1.1
+Content-Type: application/json
+
+{  
+        "msg": "Hallo Vincent"
+}
