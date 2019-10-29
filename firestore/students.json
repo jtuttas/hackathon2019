@@ -4,7 +4,7 @@
         "first_name": "Mohammed",
         "last_name": "Kellogg",
         "email": "mkellogg0@networksolutions.com",
-        "class": 2,
+        "class": "IT8o",
         "flow_id": "Male",
         "topics": [
             {
@@ -26,7 +26,7 @@
         "first_name": "Thebault",
         "last_name": "Tremellier",
         "email": "ttremellier1@auda.org.au",
-        "class": 1,
+        "class": "IT9o",
         "flow_id": "Male",
         "topics": [
             {
@@ -47,8 +47,8 @@
         "id": 3,
         "first_name": "Tallie",
         "last_name": "Wallsworth",
-        "email": "twallsworth2@constantcontact.com",
-        "class": 2,
+        "email": "twallsworthIT8o@constantcontact.com",
+        "class": "IT8o",
         "flow_id": "Male",
         "topics": [
             {
@@ -67,7 +67,7 @@
         "first_name": "Shina",
         "last_name": "Kender",
         "email": "skender3@unc.edu",
-        "class": 2,
+        "class": "IT8o",
         "flow_id": "Female",
         "topics": [
             {
@@ -86,7 +86,7 @@
         "first_name": "Kerrill",
         "last_name": "Franzman",
         "email": "kfranzman4@etsy.com",
-        "class": 1,
+        "class": "IT9o",
         "flow_id": "Female",
         "topics": [
             {
@@ -108,7 +108,7 @@
         "first_name": "Kassie",
         "last_name": "MacLeod",
         "email": "kmacleod5@bigcartel.com",
-        "class": 2,
+        "class": "IT9o",
         "flow_id": "Female",
         "topics": [
             {
