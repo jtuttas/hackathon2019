@@ -12,8 +12,10 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
        
         query=urllib.parse.parse_qs(self.path)
-        print ("msg="+str(query.get('msg')));
-        response = {"msg": str(query.get('msg'))}
+        print ("Betreff="+str(query.get('/?Betreff')));
+        response = {"Betreff": str(query.get('/?Betreff')),
+        "Startzeit":str(query.get('Startzeit')),
+        "Endzeit":str(query.get('Endzeit'))}
         self.wfile.write(json.dumps(response).encode("utf-8"))
         return
 
