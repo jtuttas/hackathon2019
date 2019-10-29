@@ -1,1 +1,3 @@
-﻿firestore/serviceAccount.json
+﻿firestore/ServiceAccountKey.json
+venv/
+.vscode/
