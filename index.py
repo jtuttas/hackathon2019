@@ -3,6 +3,8 @@ import debugserver
 import json
 import urllib.parse 
 import students
+import requests
+
 
 class handler(BaseHTTPRequestHandler):
 
@@ -16,11 +18,15 @@ class handler(BaseHTTPRequestHandler):
         query=urllib.parse.parse_qs(self.path)
         betreff=str(query.get('/?Betreff')).replace("[","").replace("]","").replace("'","")
         aktionstyp=str(query.get('Aktionstyp')).replace("[","").replace("]","").replace("'","")
-        print ("Betreff="+betreff+ " Aktionstyp="+aktionstyp);
+        print ("Betreff="+betreff+ " Aktionstyp="+aktionstyp)
 
         if aktionstyp=="deleted":
             print(students.test.getClass(betreff))
-            pass
+            pupils =students.test.getClass(betreff)
+            for pupil in pupils:
+                msg={"msg":"es geht"}
+                print("FlowID="+pupil['flow_id'])
+                requests.post(pupil['flow_id'],json=msg)
 
         response = {"Betreff": str(query.get('/?Betreff')),
         "Startzeit":str(query.get('Startzeit')),
