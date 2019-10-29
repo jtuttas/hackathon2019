@@ -6,20 +6,12 @@
         "email": "mkellogg0@networksolutions.com",
         "class": "IT8o",
         "flow_id": "https://prod-54.westeurope.logic.azure.com:443/workflows/e8725304a0b941009759d8265dd20003/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=eL6SojvL8VPFJ8Cy02eZk_KwCGupOBIY1MM4wNDpsXo",
-        "topics": [
-            {
-                "topic": "Datenbanken"
-            },
-            {
-                "topic": "Group Policy Object"
-            },
-            {
-                "topic": "Glasfaserkabel"
-            },
-            {
-                "topic": "Router"
-            }
-        ]
+        "topics": {
+            "topic1": "Datenbanken",
+            "topic2": "Group Policy Object",
+            "topic3": "Glasfaserkabel",
+            "topic4": "Router"
+        }
     },
     {
         "id": 2,
@@ -28,20 +20,12 @@
         "email": "ttremellier1@auda.org.au",
         "class": "IT9o",
         "flow_id": "https://prod-59.westeurope.logic.azure.com:443/workflows/30d055b7d4b54e3d932c08c2156fefdc/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2fjmZHuDOuFN9PA3yry_nLLnmyjUBQaaWpD2qg_fOOk",
-        "topics": [
-            {
-                "topic": "Python"
-            },
-            {
-                "topic": "Switch"
-            },
-            {
-                "topic": "CCNA Routing and Switching Chapter 3"
-            },
-            {
-                "topic": "Ethernet Lan Kabel"
-            }
-        ]
+        "topics": {
+            "topic1": "Python",
+            "topic2": "Switch",
+            "topic3": "CCNA Routing and Switching Chapter 3",
+            "topic4": "Ethernet Lan Kabel"
+        }
     },
     {
         "id": 3,
@@ -50,17 +34,11 @@
         "email": "twallsworthIT8o@constantcontact.com",
         "class": "IT8o",
         "flow_id": "https://prod-39.westeurope.logic.azure.com:443/workflows/9731d87306f046ef8d3973dcb75aa217/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=FwZxryct0DGE8WF3fAlI8PLwBLACgpOrKtDg4gPXBT0",
-        "topics": [
-            {
-                "topic": "CCNA Routing and Switching Chapter 5"
-            },
-            {
-                "topic": "Bildschirm Anschlüsse"
-            },
-            {
-                "topic": "Speichergrößen"
-            }
-        ]
+        "topics": {
+            "topic1": "CCNA Routing and Switching Chapter 5",
+            "topic2": "Bildschirm Anschlüsse",
+            "topic3": "Speichergrößen"
+        }
     },
     {
         "id": 4,
@@ -69,17 +47,11 @@
         "email": "skender3@unc.edu",
         "class": "IT8o",
         "flow_id": "Female",
-        "topics": [
-            {
-                "topic": "DHCP"
-            },
-            {
-                "topic": "Speichergrößen"
-            },
-            {
-                "topic": "Group Policy Object"
-            }
-        ]
+        "topics": {
+            "topic1": "DHCP",
+            "topic2": "Speichergrößen",
+            "topic3": "Group Policy Object"
+        }
     },
     {
         "id": 5,
@@ -88,20 +60,12 @@
         "email": "kfranzman4@etsy.com",
         "class": "IT9o",
         "flow_id": "https://prod-76.westeurope.logic.azure.com:443/workflows/411a2e0220fc4a96b82f0c4bf58803ec/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=M_SatVMak0ElioqTbn57aor9BK54ta-jq6-P5_0FF2w",
-        "topics": [
-            {
-                "topic": "DNS"
-            },
-            {
-                "topic": "Software Paketierung"
-            },
-            {
-                "topic": "OSI-Modell"
-            },
-            {
-                "topic": "Java"
-            }
-        ]
+        "topics": {
+            "topic1": "DNS",
+            "topic2": "Software Paketierung",
+            "topic3": "OSI-Modell",
+            "topic4": "Java"
+        }
     },
     {
         "id": 6,
@@ -110,20 +74,12 @@
         "email": "kmacleod5@bigcartel.com",
         "class": "IT9o",
         "flow_id": "https://prod-54.westeurope.logic.azure.com:443/workflows/e8725304a0b941009759d8265dd20003/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=eL6SojvL8VPFJ8Cy02eZk_KwCGupOBIY1MM4wNDpsXo",
-        "topics": [
-            {
-                "topic": "Speichergrößen"
-            },
-            {
-                "topic": "Router"
-            },
-            {
-                "topic": "Python"
-            },
-            {
-                "topic": "CCNA Routing and Switching Chapter 4"
-            }
-        ]
+        "topics": {
+            "topic1": "Speichergrößen",
+            "topic2": "Router",
+            "topic3": "Python",
+            "topic4": "CCNA Routing and Switching Chapter 4"
+        }
     },
     {
         "id": 6,
@@ -132,20 +88,11 @@
         "email": "kmacleod5@bigcartel.com",
         "class": "IT9o",
         "flow_id": "https://prod-114.westeurope.logic.azure.com:443/workflows/a762c39d15ba4995aa5b01067b384f53/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Wk0rvfbm8gr6Zoy3dkapZSPtMd2VoJqCaXQr_0CjMJw",
-        "topics": [
-            {
-                "topic": "Speichergrößen"
-            },
-            {
-                "topic": "Router"
-            },
-            {
-                "topic": "Python"
-            },
-            {
-                "topic": "CCNA Routing and Switching Chapter 4"
-            }
-        ]
+        "topics": {
+            "topic1": "Speichergrößen",
+            "topic2": "Router",
+            "topic3": "Python",
+            "topic4": "CCNA Routing and Switching Chapter 4"
+        }
     }
-
 ]
