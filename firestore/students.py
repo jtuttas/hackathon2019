@@ -25,7 +25,6 @@ class Students():
 
         return studentsArray
 
-
 test = Students()
 
 #print("Klasse 1")
