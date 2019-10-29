@@ -17,5 +17,5 @@ studentsArray = []
 studentsDict = {el.id: el.to_dict() for el in students}
 studentsArray = [student for student in studentsDict.items()]
 
-print("")
+print(studentsArray)
 
