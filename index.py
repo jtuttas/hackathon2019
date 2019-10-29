@@ -12,13 +12,21 @@ class handler(BaseHTTPRequestHandler):
         self.send_header("Content-type", "application/json")
         self.end_headers()
 
+
        
         print(students.test.getClass("IT8o"))
         query=urllib.parse.parse_qs(self.path)
         print ("Betreff="+str(query.get('/?Betreff')));
+
+        aktionstyp=query.get("Aktionstyp")
+        if aktionstyp=="deleted":
+            pass
+
         response = {"Betreff": str(query.get('/?Betreff')),
         "Startzeit":str(query.get('Startzeit')),
-        "Endzeit":str(query.get('Endzeit'))}
+        "Endzeit":str(query.get('Endzeit')),
+        "Aktionstyp":str(query.get('Aktionstyp')),
+        }
         self.wfile.write(json.dumps(response).encode("utf-8"))
         return
 
