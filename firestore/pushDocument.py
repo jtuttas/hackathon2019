@@ -16,5 +16,5 @@ data = json.load(jsonPath)
 
 for student in data:
     documentName = student["first_name"] + student["last_name"]
-    
+
     store.collection(collection).document(documentName).set(student)
