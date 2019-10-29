@@ -19,7 +19,7 @@ class Students():
         return studentsCollection
 
     def getClass(self, classID):
-        documents = self.data.where('class', '==', 1).get()
+        documents = self.data.where('class', '==', 1).stream()
         studentsDict = {el.id: el.to_dict() for el in documents}
         studentsArray = [student for student in studentsDict.items()]
 
