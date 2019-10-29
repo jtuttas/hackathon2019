@@ -13,7 +13,7 @@ class handler(BaseHTTPRequestHandler):
        
         query=urllib.parse.parse_qs(self.path)
         print ("msg="+str(query.get('msg')));
-        response = {"hello": "world"}
+        response = {"msg": str(query.get('msg'))}
         self.wfile.write(json.dumps(response).encode("utf-8"))
         return
 
