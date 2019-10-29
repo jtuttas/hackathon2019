@@ -6,10 +6,11 @@ import json
 
 class Students():
     def __init__(self):
-        self.data = self.connectFirestore
+        self.data = self.connectFirestore()
 
     def connectFirestore(self):
-        cred = credentials.Certificate("./firestore/ServiceAccountKey.json")
+        cred = credentials.Certificate(
+            "./firestore/ServiceAccountKey.json")
         app = firebase_admin.initialize_app(cred)
 
         store = firestore.client()
@@ -18,11 +19,16 @@ class Students():
         return studentsCollection
 
     def getClass(self, classID):
-        students = self.data.select(u'class', u'==', self.classID)
-        return students
+        documents = self.data.where('class', '==', 1).get()
+        studentsDict = {el.id: el.to_dict() for el in documents}
+        studentsArray = [student for student in studentsDict.items()]
+
+        return studentsArray
 
 
 test = Students()
 
-test.getClass(1)
-
+print("Klasse 1")
+print(test.getClass(1))
+print("Klasse 2")
+print(test.getClass(2))
