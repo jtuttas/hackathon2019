@@ -15,9 +15,7 @@ students = studentsCollection.where('class', '==', 1).get()
 studentsArray = []
 
 studentsDict = {el.id: el.to_dict() for el in students}
-
 studentsArray = [student for student in studentsDict.items()]
-# studentsArray.append(my_dict)
 
 print("")
 
