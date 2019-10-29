@@ -16,5 +16,4 @@ data = json.load(jsonPath)
 
 for student in data:
     documentName = student["id"]
-
-store.collection(collection).document(documentName).set(data)
+    #store.collection(collection).document(documentName).set(data)
