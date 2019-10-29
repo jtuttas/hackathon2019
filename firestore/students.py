@@ -28,7 +28,7 @@ class Students():
 
 test = Students()
 
-print("Klasse 1")
-print(test.getClass(1))
-print("Klasse 2")
-print(test.getClass(2))
+#print("Klasse 1")
+#print(test.getClass(1))
+#print("Klasse 2")
+#print(test.getClass())
