@@ -19,7 +19,7 @@ class Students():
         return studentsCollection
 
     def getClass(self, classID):
-        documents = self.data.where('class', '==', 1).stream()
+        documents = self.data.where('class', '==', classID).stream()
         studentsDict = {el.id: el.to_dict() for el in documents}
         studentsArray = [student for student in studentsDict.items()]
 
@@ -28,6 +28,6 @@ class Students():
 test = Students()
 
 #print("Klasse 1")
-#print(test.getClass(1))
+#print(test.getClass("IT8o"))
 #print("Klasse 2")
 #print(test.getClass())
