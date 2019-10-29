@@ -1,0 +1,1 @@
+GET http://localhost:8888/?klasse=fiae17A&msg=Unterricht%20faellt%20aus! HTTP/1.1
