@@ -1,4 +1,4 @@
-GET http://localhost:80?Betreff=fiae17A&Startzeit=2017-08-29T12:34:35.0000000&Endzeit=Startzeit2017-08-29T14:00:00.0000000 HTTP/1.1
+GET http://localhost:80?Betreff=IT8o&Aktionstyp=deleted&Startzeit=2017-08-29T12:34:35.0000000&Endzeit=Startzeit2017-08-29T14:00:00.0000000 HTTP/1.1
 
 ###
 GET http://service.joerg-tuttas.de?Betreff=fiae17A&Startzeit=2017-08-29T12:34:35.0000000&Endzeit=Startzeit2017-08-29T14:00:00.0000000 HTTP/1.1

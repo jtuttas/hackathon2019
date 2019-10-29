@@ -13,13 +13,13 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
 
 
-       
-        print(students.test.getClass("IT8o"))
         query=urllib.parse.parse_qs(self.path)
-        print ("Betreff="+str(query.get('/?Betreff')));
+        betreff=str(query.get('/?Betreff')).replace("[","").replace("]","").replace("'","")
+        aktionstyp=str(query.get('Aktionstyp')).replace("[","").replace("]","").replace("'","")
+        print ("Betreff="+betreff+ " Aktionstyp="+aktionstyp);
 
-        aktionstyp=query.get("Aktionstyp")
         if aktionstyp=="deleted":
+            print(students.test.getClass(betreff))
             pass
 
         response = {"Betreff": str(query.get('/?Betreff')),
