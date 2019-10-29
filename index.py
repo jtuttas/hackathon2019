@@ -21,9 +21,14 @@ class handler(BaseHTTPRequestHandler):
             "[", "").replace("]", "").replace("'", "")
         print("Betreff="+betreff + " Aktionstyp="+aktionstyp)
 
-        if aktionstyp == "deleted":
-            # print(students.test.getClass(betreff))
-            pupils = students.test.getClass(betreff)
+        query=urllib.parse.parse_qs(self.path)
+        betreff=str(query.get('/?Betreff')).replace("[","").replace("]","").replace("'","")
+        aktionstyp=str(query.get('Aktionstyp')).replace("[","").replace("]","").replace("'","")
+        print ("Betreff="+betreff+ " Aktionstyp="+aktionstyp)
+
+        if aktionstyp=="updated":
+            print(students.test.getClass(betreff))
+            pupils =students.test.getClass(betreff)
             for pupil in pupils:
                 msg = f"Hey {pupil['first_name']} deine Stunde fällt aus, wie wäre es mit dem Thema {pupil['topics']['topic1']}"
 
