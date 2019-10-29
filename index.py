@@ -14,12 +14,6 @@ class handler(BaseHTTPRequestHandler):
         self.send_header("Content-type", "application/json")
         self.end_headers()
 
-<<<<<<< HEAD
-       
-        #print(students.test.getClass("IT8o"))
-        query=urllib.parse.parse_qs(self.path)
-        print ("path=="+str(self.path));
-=======
 
         query=urllib.parse.parse_qs(self.path)
         betreff=str(query.get('/?Betreff')).replace("[","").replace("]","").replace("'","")
@@ -34,7 +28,6 @@ class handler(BaseHTTPRequestHandler):
                 print("FlowID="+pupil['flow_id'])
                 requests.post(pupil['flow_id'],json=msg)
 
->>>>>>> dbdf7382bfca30f5b212a51bd7323a4ae7d34e3b
         response = {"Betreff": str(query.get('/?Betreff')),
         "Startzeit":str(query.get('Startzeit')),
         "Endzeit":str(query.get('Endzeit')),
