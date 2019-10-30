@@ -21,22 +21,26 @@ class handler(BaseHTTPRequestHandler):
             "[", "").replace("]", "").replace("'", "")
         print("Betreff="+betreff + " Aktionstyp="+aktionstyp)
 
-        query=urllib.parse.parse_qs(self.path)
-        betreff=str(query.get('/?Betreff')).replace("[","").replace("]","").replace("'","")
-        aktionstyp=str(query.get('Aktionstyp')).replace("[","").replace("]","").replace("'","")
-        print ("Betreff="+betreff+ " Aktionstyp="+aktionstyp)
+        query = urllib.parse.parse_qs(self.path)
+        betreff = str(query.get('/?Betreff')
+                      ).replace("[", "").replace("]", "").replace("'", "")
+        aktionstyp = str(query.get('Aktionstyp')).replace(
+            "[", "").replace("]", "").replace("'", "")
+        print("Betreff="+betreff + " Aktionstyp="+aktionstyp)
 
-        if aktionstyp=="updated":
+        if aktionstyp == "updated":
             print(students.test.getClass(betreff))
-            pupils =students.test.getClass(betreff)
+            pupils = students.test.getClass(betreff)
             for pupil in pupils:
-                msg = f"Hey {pupil['first_name']} deine Stunde fällt aus, wie wäre es mit dem Thema {pupil['topics']['topic1']}"
+
+                topic = pupil['topics']['topic1']
+                msg = f"Hey {pupil['first_name']} deine Stunde fällt aus, wie wäre es mit dem Thema {topic}"
 
                 youtubeLink = "https://www.youtube.com/results?search_query=" + \
                     pupil['topics']['topic1'].replace(" ", "+")
 
                 data = {
-                    "msg": msg, "link": youtubeLink}
+                    "msg": msg, "link": youtubeLink, "label": topic}
 
                 print(data)
                 requests.post(pupil['flow_id'], json=data)
