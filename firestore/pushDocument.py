@@ -9,7 +9,7 @@ app = firebase_admin.initialize_app(cred)
 
 store = firestore.client()
 
-jsonPath = open("./firestore/students.json", "r")
+jsonPath = open("./firestore/students.json", "r", encoding="UTF-8")
 collection = "students"
 
 data = json.load(jsonPath)
