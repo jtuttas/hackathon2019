@@ -41,19 +41,6 @@
         }
     },
     {
-        "id": 4,
-        "first_name": "Shina",
-        "last_name": "Kender",
-        "email": "skender3@unc.edu",
-        "class": "IT8o",
-        "flow_id": "Female",
-        "topics": {
-            "topic1": "DHCP",
-            "topic2": "Speichergrößen",
-            "topic3": "Group Policy Object"
-        }
-    },
-    {
         "id": 5,
         "first_name": "Vincent",
         "last_name": "Wichmann",
