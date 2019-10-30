@@ -34,7 +34,7 @@ class handler(BaseHTTPRequestHandler):
             for pupil in pupils:
 
                 topic = pupil['topics']['topic1']
-                msg = f"Hey {pupil['first_name']} deine Stunde fällt aus, wie wäre es mit dem Thema {topic}"
+                msg = f"Hey {pupil['first_name']} deine Stunde faellt aus, wie waere es mit dem Thema {topic}"
 
                 youtubeLink = "https://www.youtube.com/results?search_query=" + \
                     pupil['topics']['topic1'].replace(" ", "+")
